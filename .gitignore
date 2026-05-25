@@ -1,9 +1,40 @@
-venv/
-expense_tracker.db
+# ── Python ────────────────────────────────────────────────────────────
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
-.env
-.DS_Store
-.claude/
+*.pyd
+*.so
+
+# ── Virtual environments ───────────────────────────────────────────────
+venv/
 .venv/
+env/
+.env/
+
+# ── Environment variables ──────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── Flask / SQLite ─────────────────────────────────────────────────────
+instance/
+*.db
+*.sqlite
+*.sqlite3
+
+# ── Testing ────────────────────────────────────────────────────────────
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# ── Editor & OS ───────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# ── Claude Code ───────────────────────────────────────────────────────
+.claude/
